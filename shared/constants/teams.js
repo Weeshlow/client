@@ -143,6 +143,11 @@ export const makeRequestInfo: I.RecordFactory<_RequestInfo> = I.Record({
 
 export type TabKey = 'members' | 'requests' | 'pending'
 
+export type SetChannelCreationError = NoErrorTypedAction<
+  'teams:setChannelCreationError',
+  {channelCreationError: string}
+>
+
 export type SetTeamCreationError = NoErrorTypedAction<
   'teams:setTeamCreationError',
   {teamCreationError: string}
